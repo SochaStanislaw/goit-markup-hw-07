@@ -22,9 +22,9 @@
   </head>
   <body>
     <!-- MODAL-BOX-BEGIN -->
-    <div data-modal class="modal is-hidden backdrop">
+    <div class="modal is-hidden backdrop" data-modal>
       <div class="modal-box">
-        <button data-modal-close class="close-modal-button">
+        <button class="modal-box__close-button" data-modal-close>
           <svg>
             <use
               href="./images/SVG/modal-box-close.svg#icon-close-black-18dp-2-1"
@@ -35,12 +35,12 @@
             ></use>
           </svg>
         </button>
-        <h3 class="modal-box-heading">
+        <h3 class="modal-box__heading">
           Zostaw swoje dane w formularzu poniżej
         </h3>
         <div class="modal-forms-container">
           <form name="modal-forms" autocomplete="on">
-            <div class="modal-forms-display">
+            <div class="modal-forms-container__display">
               <label for="modal-form-firstname">Imię</label>
               <input
                 id="modal-form-firstname"
@@ -58,7 +58,7 @@
                 ></use>
               </svg>
             </div>
-            <div class="modal-forms-display">
+            <div class="modal-forms-container__display">
               <label for="modal-form-phone-number">Telefon</label>
               <input
                 id="modal-form-phone-number"
@@ -76,7 +76,7 @@
                 ></use>
               </svg>
             </div>
-            <div class="modal-forms-display">
+            <div class="modal-forms-container__display">
               <label for="modal-form-email">Email</label>
               <input
                 id="modal-form-email"
@@ -94,7 +94,7 @@
                 ></use>
               </svg>
             </div>
-            <div class="modal-forms-display">
+            <div class="modal-forms-container__display">
               <label for="modal-form-comment">Komentarz</label>
               <textarea
                 id="modal-form-comment"
