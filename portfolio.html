@@ -21,29 +21,53 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- NAV-MENU-BAR-BEGIN -->
-    <header class="header-nav-border">
+    <!-- HEADER-BAR-BEGIN -->
+    <header class="header-bar-border">
+      <!-- CONTAINER-1200px-BEGIN -->
       <div class="container">
-        <div class="header-nav-box">
-          <a
-            class="head-foot-common-styles header-title-style"
-            href="./index.html"
-            ><span class="web-title-style">Web</span>Studio</a
+        <!-- HEADER-BAR-WRAPPER-BEGIN -->
+        <div class="header-bar-wrapper">
+          <!-- WEB-PAGE-TITLE-STYLE-BEGIN -->
+          <a class="web-title web-title--header-margin" href="./index.html"
+            >Web<span class="web-title--header-color">Studio</span></a
           >
-          <nav>
-            <ul class="menu-nav">
-              <li><a class="agencja-link" href="./index.html">Agencja</a></li>
-              <li
-                class="current-page-style portfolio-underline underline-style"
-              >
-                <a class="portfolio-link" href="./portfolio.html">Portfolio</a>
+          <!-- WEB-PAGE-TITLE-STYLE-END -->
+
+          <!-- HEADER-NAVIGATION-BEGIN -->
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__underline-global-style">
+                <a
+                  class="header-nav__link header-nav__link--active"
+                  href="./index.html"
+                  >Agencja</a
+                >
               </li>
-              <li><a class="kontakt-link" href="">Kontakt</a></li>
+              <li
+                class="header-nav__underline-global-style header-nav__underline-portfolio-style header-nav__item--active-color"
+              >
+                <a
+                  class="header-nav__link header-nav__link--active"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-nav__underline-global-style">
+                <a class="header-nav__link header-nav__link--active" href=""
+                  >Kontakt</a
+                >
+              </li>
             </ul>
           </nav>
-          <ul class="menu-contacts">
+          <!-- HEADER-NAVIGATION-END -->
+
+          <!-- HEADER-CONTACTS-BEGIN -->
+          <ul class="header-contact">
             <li>
-              <a class="email-link" href="mailto:info@devstudio.com">
+              <a
+                class="header-contact__link header-contact__link--active"
+                href="mailto:info@devstudio.com"
+              >
                 <svg width="16px" height="12px">
                   <use href="./images/SVG/header-icons.svg#icon-envelope"></use>
                 </svg>
@@ -51,7 +75,10 @@
               >
             </li>
             <li>
-              <a class="phone-link" href="tel:+48111111111">
+              <a
+                class="header-contact__link header-contact__link--active"
+                href="tel:+48111111111"
+              >
                 <svg width="10px" height="16px">
                   <use
                     href="./images/SVG/header-icons.svg#icon-smartphone"
@@ -61,10 +88,15 @@
               >
             </li>
           </ul>
+          <!-- HEADER-CONTACTS-END -->
         </div>
+        <!-- HEADER-BAR-WRAPPER-END -->
       </div>
+      <!-- CONTAINER-1200px-END -->
     </header>
-    <!-- NAV-MENU-BAR-END -->
+    <!-- HEADER-BAR-END -->
+
+    <!-- MAIN-BEGIN -->
     <main>
       <!-- PORTFOLIO-SECTION-NO-1-FILTER BUTTONS-BEGIN -->
       <section class="portfolio-section-no-1">

@@ -130,37 +130,62 @@
                 >.
               </label>
             </div>
-            <button class="send-form-button" type="submit">Wyślij</button>
+            <button class="btn-blue btn-blue--modal-submit" type="submit">
+              Wyślij
+            </button>
           </form>
         </div>
       </div>
     </div>
     <!-- MODAL-BOX-END -->
-    <!-- NAV-MENU-BAR-BEGIN -->
-    <header class="header-nav-border">
+
+    <!-- HEADER-BAR-BEGIN -->
+    <header class="header-bar-border">
+      <!-- CONTAINER-1200px-BEGIN -->
       <div class="container">
-        <div class="header-nav-box">
-          <a
-            class="head-foot-common-styles header-title-style"
-            href="./index.html"
-            ><span class="web-title-style">Web</span>Studio</a
+        <!-- HEADER-BAR-WRAPPER-BEGIN -->
+        <div class="header-bar-wrapper">
+          <!-- WEB-PAGE-TITLE-STYLE-BEGIN -->
+          <a class="web-title web-title--header-margin" href="./index.html"
+            >Web<span class="web-title--header-color">Studio</span></a
           >
-          <nav>
-            <ul class="menu-nav">
-              <li class="current-page-style agencja-underline underline-style">
-                <a class="agencja-link" href="./index.html">Agencja</a>
+          <!-- WEB-PAGE-TITLE-STYLE-END -->
+
+          <!-- HEADER-NAVIGATION-BEGIN -->
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li
+                class="header-nav__underline-global-style header-nav__underline-agnecja-style header-nav__item--active-color"
+              >
+                <a
+                  class="header-nav__link header-nav__link--active"
+                  href="./index.html"
+                  >Agencja</a
+                >
               </li>
               <li>
-                <a class="portfolio-link" href="./portfolio.html">Portfolio</a>
+                <a
+                  class="header-nav__link header-nav__link--active"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
               </li>
-              <li>
-                <a class="kontakt-link" href="">Kontakt</a>
+              <li class="header-nav__underline-global-style">
+                <a class="header-nav__link header-nav__link--active" href=""
+                  >Kontakt</a
+                >
               </li>
             </ul>
           </nav>
-          <ul class="menu-contacts">
+          <!-- HEADER-NAVIGATION-END -->
+
+          <!-- HEADER-CONTACTS-BEGIN -->
+          <ul class="header-contact">
             <li>
-              <a class="email-link" href="mailto:info@devstudio.com">
+              <a
+                class="header-contact__link header-contact__link--active"
+                href="mailto:info@devstudio.com"
+              >
                 <svg width="16px" height="12px">
                   <use href="./images/SVG/header-icons.svg#icon-envelope"></use>
                 </svg>
@@ -168,7 +193,10 @@
               >
             </li>
             <li>
-              <a class="phone-link" href="tel:+48111111111">
+              <a
+                class="header-contact__link header-contact__link--active"
+                href="tel:+48111111111"
+              >
                 <svg width="10px" height="16px">
                   <use
                     href="./images/SVG/header-icons.svg#icon-smartphone"
@@ -178,25 +206,45 @@
               >
             </li>
           </ul>
+          <!-- HEADER-CONTACTS-END -->
         </div>
+        <!-- HEADER-BAR-WRAPPER-END -->
       </div>
+      <!-- CONTAINER-1200px-END -->
     </header>
-    <!-- NAV-MENU-BAR-END -->
+    <!-- HEADER-BAR-END -->
+
+    <!-- MAIN-BEGIN -->
     <main>
-      <!-- SECTION-NO-1-MAIN HEADING-BEGIN -->
+      <!-- SECTION-NO-1-BEGIN -->
+      <!-- SECTION'-SPACE-BEETWEN-BEGIN -->
       <div class="section">
+        <!-- SECTION-NO-1-BG-STYLE-BEGIN -->
         <section class="section-no-1">
-          <div class="container section-no-1-position">
-            <h1 class="main-card-heading">
-              efektywne rozwiązania dla waszego biznesu
-            </h1>
-            <button data-modal-open class="order-button" type="button">
-              Zamów usługę
-            </button>
+          <!-- CONTAINER-1200px-BEGIN -->
+          <div class="container">
+            <!-- SECTION-NO-1-HEADING-BEGIN -->
+            <div class="section-no-1__heading-padding">
+              <h1 class="section-no-1__heading-style">
+                efektywne rozwiązania dla waszego biznesu
+              </h1>
+              <button
+                class="btn-blue btn-blue--order-active"
+                type="button"
+                data-modal-open
+              >
+                Zamów usługę
+              </button>
+            </div>
+            <!-- SECTION-NO-1-HEADING-END -->
           </div>
+          <!-- CONTAINER-1200px-END -->
         </section>
+        <!-- SECTION-NO-1-BG-STYLE-END -->
       </div>
+      <!-- SECTION'-SPACE-BEETWEN-END -->
       <!-- SECTION-NO-1-END -->
+
       <!-- SECTION-NO-2-OUR ADVENTAGES-BEGIN -->
       <section class="section">
         <div class="container section-no-2-box-style">
@@ -628,12 +676,13 @@
     <!-- FOOTER-BAR-BEGIN -->
     <footer class="footer-contact-style">
       <div class="flex-box-footer">
+        <!-- FOOTER' ADDRESS BOX BEGIN -->
         <div class="container footer-contact-position">
-          <a
-            class="head-foot-common-styles footer-title-style"
-            href="index.html"
-            ><span class="web-title-style">Web</span>Studio</a
+          <!-- WEB-PAGE-TITLE-STYLE-BEGIN -->
+          <a class="web-title web-title--header-margin" href="./index.html"
+            >Web<span class="web-title--footer-color">Studio</span></a
           >
+          <!-- WEB-PAGE-TITLE-STYLE-END -->
           <address class="footer-address-box">
             <ul>
               <li>
@@ -661,6 +710,8 @@
             </ul>
           </address>
         </div>
+        <!-- FOOTER' ADDRESS BOX END -->
+        <!-- SOCIAL ICON' LINKS BEGIN -->
         <div class="footer-social-icons">
           <p>dołącz do nas</p>
           <ul class="footer-social-icons position">
@@ -726,25 +777,35 @@
             </li>
           </ul>
         </div>
-        <!-- newsletter form begin -->
-        <div class="newsletter-form">
-          <!-- kontener na newsletter begon -->
-          <label for="newsletter-email">zapisz się do newslettera</label>
+        <!-- SOCIAL ICON' LINKS END -->
+        <!-- NEWSLETTER' FORM BEGIN -->
+        <div class="newsletter-theme">
+          <label
+            class="newsletter-theme__label newsletter-theme__label--active"
+            for="newsletter-email"
+            >zapisz się do newslettera</label
+          >
           <form
-            class="newsletter-subscribe newsletter-form-input"
+            class="newsletter-theme__form"
             name="newsletter-form"
             autocomplete="on"
           >
             <input
+              class="newsletter-theme__input newsletter-theme__input--acive"
               id="newsletter-email"
               type="email"
               name="email"
               placeholder="E-mail"
               required
             />
-            <div class="newsletter-button-style">
-              <button type="submit">Zapisz się</button>
-              <svg width="24px" height="24px">
+            <div class="newsletter-theme__btn">
+              <button
+                class="btn-blue btn-blue--newsletter-submit"
+                type="submit"
+              >
+                Zapisz się
+              </button>
+              <svg class="newsletter-theme__icon" width="24px" height="24px">
                 <use
                   href="./images/SVG/newsletter-footer.svg#icon-icon-send"
                 ></use>
@@ -752,6 +813,7 @@
             </div>
           </form>
         </div>
+        <!-- NEWSLETTER' FORM END -->
       </div>
     </footer>
     <!-- FOOTER-BAR-END -->
