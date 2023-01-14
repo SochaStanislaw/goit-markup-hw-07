@@ -18,7 +18,7 @@
     --nav-contact-font-color: #757575;
     --headers-font-color: #212121;
     --paragraph-font-color: #757575;
-    --footer-bg-color: #2F303A
+    --footer-bg-color: #2F303A;
 }
 /* ROOT-END */
 
@@ -853,10 +853,6 @@ margin: 0 auto;
 /* FOOTER-BAR-ADDRESS'-LIST-END */
 
 /* SOCIAL-MEDIA-ICONS-WRAPPER-BEGIN */
-.social-icons__wrapper {
-    display: flex;
-}
-
 .social-icons__wrapper--footer-display {
     display: flex;
     flex-direction: column;
