@@ -1,6 +1,6 @@
 @import '../utils/vars';
 
-.social-icons {
+.social-container {
 
     &__heading {
         margin: 12px 0 20px 0;
@@ -9,7 +9,7 @@
         line-height: 1.43;
         font-size: 14px;
         letter-spacing: 0.03em;
-        color: getColor('font-footer-light');
+        color: getColor('pure-white');
     }
 
     &__wrapper {

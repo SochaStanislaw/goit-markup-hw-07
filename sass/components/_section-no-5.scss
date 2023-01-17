@@ -12,7 +12,7 @@
         font-size: 36px;
         line-height: 1.16;
         letter-spacing: 0.03em;
-        color: getColor('font-global-dark');
+        color: getColor('light-black');
     }
 
     &__logos-wrapper {
@@ -23,14 +23,14 @@
 
     &__logo {
         padding: 16px 32px 16px 32px;
-        border: getB('b-logo');
-        border-radius: getBr('br-logo');
-        fill: getColor('icon-logo');
+        border: getB('b-light-grey');
+        border-radius: getBr('br-thick');
+        fill: getColor('chill-grey');
 
         &--active:hover,
         &--active:focus {
-            fill: getColor('bg-active');
-            border: getB('b-form-active');
+            fill: getColor('global-blue');
+            border: getB('b-light-blue');
             transition: getAnimation('global-theme');
             cursor: pointer;
         }

@@ -24,16 +24,16 @@
         text-decoration: none;
 
         &--city {
-            color: getColor('font-footer-light');
+            color: getColor('pure-white');
         }
 
         &--contact {
-            color: getColor('font-footer-dark');
+            color: getColor('chill-grey');
         }
 
         &--active:hover,
         &--active:focus {
-            color: getColor('font-active');
+            color: getColor('global-blue');
             transition: getAnimation('global-theme');
         }
     }
