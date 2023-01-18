@@ -1,6 +1,7 @@
 @import '../utils/vars';
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
+@import '../utils/mixins';
 
 .social-icon {
     display: block;
@@ -15,7 +16,6 @@
     &--footer-theme {
         fill: getColor('pure-white');
         background-color: #ffffff1a;
-        border-radius: getBr('br-round');
     }
 
     &--active:hover,

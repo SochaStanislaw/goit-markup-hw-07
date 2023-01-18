@@ -1,6 +1,7 @@
 @import '../utils/vars';
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
+@import '../utils/mixins';
 
 .modal-form {
     position: absolute;
@@ -19,7 +20,7 @@
         font-size: 12px;
         letter-spacing: 0.01em;
         color: getColor('medium-grey');
-        cursor: pointer;
+        cursor: default;
     }
     
     &__input {
@@ -29,38 +30,32 @@
         border-radius: getBr('br-thick');
         padding: 0 12px 0 42px;
         margin: 4px 0 10px 0;
+
+        &--active:hover,
+        &--active:focus {
+            @include form-active;
+        
+            &:hover + .modal-form__icon,
+            &:focus + .modal-form__icon {
+                @include link-active
+            }
+        }
     }
 
-    &__input--active:hover,
-    &__input--active:focus {
-        outline: none;
-        border: getB('b-light-blue');
-        border-radius: getBr('br-thick');
-        transition: getAnimation('global-theme');
-    }
-    
-    &__input--active:hover + &__icon,
-    &__input--active:focus + &__icon {
-        fill: getColor('global-blue');
-        transition: getAnimation('global-theme');
-    }
-    
     &__textarea {
-        width: 100%;
+        @extend .modal-form__input;
         height: 120px;
         margin-top: 4px;
         padding: 12px 16px 12px 16px;
-        border: getB('b-light-black');
-        border-radius: getBr('br-thick');
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.01em;
         resize: none;
-    }
     
-    &__textarea::placeholder {
-        color: getColor('medium-grey');
+        &::placeholder {
+            color: getColor('medium-grey');
+        }
     }
     
     &__icon {
@@ -122,15 +117,15 @@
         &--blue {    
             z-index: 1;
             opacity: 0;
-        }
-    }        
+        }      
 
-    &__checkbox:checked + &__checkbox--blue {
-        opacity: 1;
-    }
-    
-    &__checkbox:hover {
-        transition: getAnimation('global-theme');
-        cursor: pointer;
+        &:checked + &--blue {
+            opacity: 1;
+        }
+        
+        &:hover {
+            transition: getAnimation('global-theme');
+            cursor: pointer;
+        }
     }
 }

@@ -26,9 +26,6 @@
     &--active:hover,
     &--active:focus {
         background: getColor('global-blue-transparent');
-        border: none;
-        border-radius: getBr('br-thick');
-        box-shadow: getBs('bs-thick-black');
         transition: getAnimation('global-theme');
         cursor: pointer;
     }

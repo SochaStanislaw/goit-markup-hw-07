@@ -1,6 +1,7 @@
 @import '../utils/vars';
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
+@import '../utils/mixins';
 
 .section-no-5 {
 
@@ -29,10 +30,8 @@
 
         &--active:hover,
         &--active:focus {
-            fill: getColor('global-blue');
+            @include link-active;
             border: getB('b-light-blue');
-            transition: getAnimation('global-theme');
-            cursor: pointer;
         }
     }
 }

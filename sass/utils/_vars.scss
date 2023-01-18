@@ -2,15 +2,15 @@
 $colors: (
 'font-link': inherit,
 'pure-white': #FFFFFF,
-'dirty-white': #F5F4FA,
-'chill-grey': #AFB1B8,
-'medium-grey': #757575,
-'dark-grey': #2F303A,
-'dark-grey-transparent': #2F303ACC,
-'light-black': #212121,
+'dirty-white': rgba(245, 244, 250, 1),
+'chill-grey': rgba(175, 177, 184, 1),
+'medium-grey': rgba(117, 117, 117, 1),
+'dark-grey': rgba(47, 48, 58, 1),
+'dark-grey-transparent': rgba(47, 48, 58, 0.8),
+'light-black': rgba(33, 33, 33, 1),
 'dark-black': #000000,
-'global-blue': #2196F3,
-'global-blue-transparent': #1D85DAE8,
+'global-blue': rgba(33, 150, 243, 1),
+'global-blue-transparent': rgba(29, 133, 218, 0.91),
 );
 
 @function getColor($key) {

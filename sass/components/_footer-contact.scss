@@ -1,7 +1,8 @@
 @import '../utils/vars';
 @import '../utils/transition-style';
+@import '../utils/mixins';
 
-.footer-address {
+.footer-contact {
 
     &__wrapper {
         margin-top: 20px;
@@ -33,8 +34,7 @@
 
         &--active:hover,
         &--active:focus {
-            color: getColor('global-blue');
-            transition: getAnimation('global-theme');
+            @include link-active;
         }
     }
 }
